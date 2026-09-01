@@ -8,4 +8,4 @@ while i <= 'z':
         alpha += i
     i = chr(ord(i) + 1)
 
-print(alpha)
+print("{}" .format(alpha))
