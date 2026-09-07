@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def raise_exception():
-    x = 1
+    x = a
     try:
         x + 2
     except TypeError:
