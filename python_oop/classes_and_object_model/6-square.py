@@ -6,6 +6,7 @@ class Square:
     """Represents a square."""
 
     def __init__(self, size=0, position(0, 0)):
+        """Initialize a square."""
         self.size = size
         self.position = position
 
@@ -47,8 +48,28 @@ class Square:
         """Print the square with #."""
         if self.__size == 0:
             print()
-        else:
-            for i in range(self.__size):
-                print("#" * self.__size)
+            return
+
+        for i in range(self.__position[1]):
+            print()
+
+        for i in range(self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
+
     def __str__(self):
-        return f"Square are {self.size} size"
+        """Return the square as a string."""
+        if self.__size == 0:
+            return ""
+
+        result = ""
+
+        for i in range(self.__position[1]):
+            result += "\n"
+
+        for i in range(self.__size):
+            result += " " * self.__position[0]
+            result += "#" * self.__size
+            if i != self.__size - 1:
+                result += "\n"
+
+        return result
