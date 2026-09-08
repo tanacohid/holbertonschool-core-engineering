@@ -4,12 +4,5 @@
 
 class Square:
     """Represents a square."""
-    def __init__(self, size:int):
+    def __init__(self, size):
         self.__size = size
-
-try:
-    carree = Square(int)
-except TypeError:
-    print("size must be an integer")
-except ValueError:
-    print("size must be >= 0")
