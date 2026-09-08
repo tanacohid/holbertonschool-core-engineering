@@ -33,3 +33,5 @@ class Square:
         else:
             for i in range(self.__size):
                 print("#" * self.__size)
+    def __str__(self):
+        return f"Square are {self.size} size"
