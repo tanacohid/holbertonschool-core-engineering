@@ -23,7 +23,3 @@ class Rectangle(BaseGeometry):
         self.width = width
         self.integer_validator("height", height)
         self.height = height
-
-
-print(issubclass(Rectangle, BaseGeometry))
-
