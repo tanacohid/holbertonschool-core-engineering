@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 """
-    Ce module contient une fonction qui lit un fichier texte
-    et affiche son contenu sur la sortie standard.
-    """
+Ce module fournit la fonction read_file.
+"""
+
 
 def read_file(filename=""):
-
-    """
-    Lit un fichier texte (UTF-8) et l'affiche dans stdout.
-    """
-    with open("UTF8.txt", 'r', encoding="utf-8") as f:
-        data = f.read()
-    print(data)
+    """Lit un fichier texte codé en UTF-8 et l'affiche sur stdout."""
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
